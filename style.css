@@ -1,0 +1,378 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*main section*/
+.main
+{
+    height:100vh;
+    width: 100%;
+    background-color:#578181;
+    padding: 0px 15%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.header
+{
+    padding: 20px 0px;
+    width: 100%;
+    /*background-color:red;*/
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo
+{
+    width:25%;
+    height:50px;
+   /* background-color: yellow;*/
+    display: flex;
+    align-items: center;
+}
+.logo >img
+{
+    width:70%;
+    height:80%;
+    vertical-align: bottom;
+}
+.h1
+{
+    width:100%;
+    font-size: medium;
+    cursor: pointer;
+}
+.social
+{
+    width: 37%;
+    height:50px;
+    /*background-color: blue;*/
+    
+}
+.social-icons
+{
+    width: 94%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    color:black;
+    cursor: pointer;
+    
+}
+.btn
+{
+    padding: 10px 20px;
+    background-color: #dca226;
+    font-size: 16px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*main content css*/
+.main-content
+{
+    width: 107%;
+    padding: 30px 0px;
+    background-color:#578181;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.intro
+{
+    width:65%;
+    padding: 20px;
+    background-color:#578181;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+.name
+{
+    font-size: 42px;
+    font-weight: bold;
+    color: #e1e352;
+}
+.role
+{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+
+}
+.interest
+{
+    font-size: 16px;
+    font-weight: bold;
+    padding-top:10px;
+    font-family: cursive;
+}
+.ttm-btn
+{
+    margin-top: 20px;
+}
+.heading
+{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.portfolio
+{
+    width:40%;
+    /*background-color:red;*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic
+{
+    width:75%;
+    height: 230px;
+    background-color: #e1e352;
+    position: absolute;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border-radius: 10px;
+}
+   .pic >img
+{
+    width:60%;
+    vertical-align: bottom;
+
+    
+} 
+
+.bg
+{
+    width:75%;
+    height:270px;
+    background-color:rgb(220 162 38);
+     transform: rotateZ(-46deg);
+     border-radius: 10px;
+} 
+
+/*navigation section css*/
+
+.navigation
+{
+    width: 100%;
+    padding: 16px 12% ;
+   /* background-color:yellow;*/
+    position: absolute;
+    margin-top: -45px;
+}
+.nav
+{
+    width: 100%;
+    padding: 8px 20px;
+    background-color:#dca226;
+    display: flex;
+    align-items: center;
+    column-gap: 10PX;
+    border-radius: 10px;
+
+
+}
+.nav-item
+{
+    padding: 10px 0px;
+    width:50px ;
+  background-color:rgb(130 169 169);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    column-gap: 8px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    overflow: hidden;
+}
+.nav-text
+{
+    margin-left: 30px;
+}
+.nav-item:hover
+{
+    width: max-content;
+}
+ .nav-link
+ {
+    width: 200px;
+    height: 25px;
+  /*  background-color: yellow;*/
+    display: flex;
+    align-items: center;
+    margin-left:11px;
+ }
+ .nav-link > i
+ {
+    display: inline-block;
+    color: white;
+ }
+ .nav-link > p
+ {
+    display: inline-block;
+    transition: .3s ease-in-out;
+    margin-left: 60px;
+    
+ }
+ .nav-item:hover .nav-link >p
+ {
+    margin-left: 10px;
+ }
+ 
+        /*content area css*/
+
+ .content
+{
+    width: 100%;
+    padding: 30px 12%;
+    background-color: #82a9a9;
+}
+.display-area
+{
+    width: 100%;
+    background-color:#e1e352;
+    margin-top: 31px;
+    padding: 20px 30px;
+}
+
+    /*icons  */
+
+    .para
+    {
+        color: white;
+        font-family: cursive;
+       
+    }
+ 
+.about-me
+{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: #82a9a9;
+}
+
+.about
+{
+    width: 90%;
+    padding: 8px;
+    background-color: rgb(87 129 129);
+    margin-left: 30px;
+    
+}
+.about-title
+{
+    font-size: 20px;
+    color:#e1e352;
+    margin-bottom:9px;
+}
+
+/*skills section css*/
+.skills-me
+{
+     width: 100%;
+    padding: 20px 25px;
+    background-color: #82a9a9;
+}
+.skill-title
+{
+    font-size: 20px;
+    color:#e1e352;
+    margin-bottom:9px;
+}
+.skills
+{
+    width:100%;
+    padding:5px 30px;
+    background-color: rgb(87 129 129);
+
+}
+
+
+/*projects section css*/
+.projects-me
+{
+     width: 100%;
+    padding: 21px 24px;
+    background-color: #82a9a9;
+}
+.projects-title
+{
+    font-size: 22px;
+    color:#e1e352;
+    margin-bottom:9px;
+}
+.projects
+{
+    width: 100%;
+    padding: 30px 30px;
+    background-color: rgb(87 129 129);
+}
+
+ 
+    /*experience section css*/
+.experience-me
+{
+     width: 100%;
+    padding: 21px 24px;
+    background-color: #82a9a9;
+}
+.experience-title
+{
+    font-size: 22px;
+    color: #e1e352;
+    margin-bottom:9px;
+}
+.experience
+{
+    width: 100%;
+    padding: 20px 25px;
+    background-color: rgb(87 129 129);
+}
+
+            /*contact section css*/
+
+.contact-me
+{
+     width: 100%;
+    padding: 21px 24px;
+    background-color: #82a9a9;
+
+}
+.contact-title
+{
+    font-size: 22px;
+    color:#e1e352;
+    margin-bottom:9px;
+}
+.contact
+{
+    width: 100%;
+    padding: 20px 25px;
+    background-color: rgb(87 129 129);
+}
+
+
+.section {
+    display: none;
+}
+
+#about {
+    display: block;
+}
+
+
