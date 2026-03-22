@@ -27,9 +27,9 @@
 }
 .logo
 {
-    width:25%;
-    height:50px;
-   /* background-color: yellow;*/
+    margin-right: auto;
+    width: auto;
+    /* background-color: yellow; */
     display: flex;
     align-items: center;
 }
@@ -38,12 +38,6 @@
     width:70%;
     height:80%;
     vertical-align: bottom;
-}
-.h1
-{
-    width:100%;
-    font-size: medium;
-    cursor: pointer;
 }
 .social
 {
@@ -112,7 +106,6 @@
     font-size: 16px;
     font-weight: bold;
     padding-top:10px;
-    font-family: cursive;
 }
 .ttm-btn
 {
@@ -122,7 +115,6 @@
 {
     font-size: 20px;
     font-weight: bold;
-    font-family: cursive;
 }
 
 .portfolio
@@ -255,7 +247,6 @@
     .para
     {
         color: white;
-        font-family: cursive;
        
     }
  
@@ -365,14 +356,238 @@
     padding: 20px 25px;
     background-color: rgb(87 129 129);
 }
+              
+/* Mobile Devices */
+@media (max-width: 599px) {
+
+    .main {
+        padding: 0px 5%;
+        height: auto;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .social {
+        width: 100%;
+    }
+
+    .social-icons {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    /* Main content */
+    .main-content {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .intro {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+
+    .role {
+        font-size: 16px;
+    }
+
+    .interest {
+        font-size: 14px;
+    }
+
+    .portfolio {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .pic {
+        width: 44%;
+        height:185px;
+    }
+    .pic >img {
+    width:68%;
+   }
 
 
-.section {
-    display: none;
+    .bg {
+        width: 32%;
+        height: 215px;
+    }
+
+    /* Navigation */
+    .navigation {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-item {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .nav-link {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .nav-text {
+        margin-left: 15px;
+    }
+
+    /* Content sections */
+    .content {
+        padding: 20px 5%;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .experience,
+    .contact {
+        margin-left: 0;
+        width: 100%;
+    }
+
 }
 
-#about {
-    display: block;
+
+
+/* Tablet Devices */
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    .main {
+        padding: 135px 8%;
+        height: auto;
+    }
+
+    .header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .social {
+        width: 50%;
+    }
+
+    .social-icons {
+        justify-content: space-around;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 9px 16px;
+    }
+
+    /* Main content */
+    .main-content {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .name {
+        font-size: 34px;
+    }
+
+    .role {
+        font-size: 18px;
+    }
+
+    .interest {
+        font-size: 15px;
+    }
+
+    .portfolio {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .pic {
+        width:30%;
+        height: 215px;
+        margin-bottom: -120px;
+    }
+    .pic >img {
+    width: 70%;
+    vertical-align: bottom;
 }
 
+    .bg {
+        width:4%;
+        height:65px;
+    }
 
+    /* Navigation */
+    .navigation {
+        padding: 12px 8%;
+        position: static;
+        margin-top: 20px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-item {
+        width: auto;
+        flex: 1;
+        text-align: center;
+    }
+
+    .nav-link {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .nav-text {
+        margin-left: 10px;
+    }
+
+    /* Content */
+    .content {
+        padding: 25px 8%;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .experience,
+    .contact {
+        margin-left: 0;
+        width: 100%;
+    }
+}
